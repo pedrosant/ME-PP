@@ -11,7 +11,7 @@ package model;
  */
 public class Aluno {
     public String logradouro;
-    public int numero;
+    public String numero;
     public String complemento;
     public String bairro;
     public String cidade;
@@ -22,7 +22,9 @@ public class Aluno {
     
     
     
-    public String cadastrar_endereco(){        
+    public String cadastrar_endereco(String logradouro, String numero, String complemento,
+            String bairro, String cidade, String uf){
+        
         return null;        
     }    
     
@@ -43,11 +45,11 @@ public class Aluno {
         this.logradouro = logradouro;
     }
 
-    public int getNumero() {
+    public String getNumero() {
         return numero;
     }
 
-    public void setNumero(int numero) {
+    public void setNumero(String numero) {
         this.numero = numero;
     }
 
